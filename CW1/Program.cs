@@ -9,6 +9,7 @@ namespace App {
             for (int i = 0; i < limit; i ++) {
                 Console.WriteLine(i * i);
             }
+            Console.Write("Goodbye");
         }
     }
 }
