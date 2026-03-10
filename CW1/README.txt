@@ -1,0 +1,1 @@
+﻿The merge was not fast-forward because both `main` and `feature-max` had new commits. Since the branches had different histories, Git created a merge commit instead of simply moving `main` forward.
