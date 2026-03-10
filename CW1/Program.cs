@@ -20,6 +20,18 @@ namespace App {
             
             return average / values.Length;
         }
+
+        static int CalculateMax(int[] values)
+        {
+            int max = values[0];
+            for (int i = 1; i < values.Length; i++){
+                if (values[i] > max) {
+                    max = values[i];
+                }
+            }
+
+            return max;
+        }
     }
 }
     
