@@ -36,7 +36,10 @@ namespace App {
         static int CalculateMin(int[] values) {
             int min = values[0];
             for (int i = 0; i < values.Length; i++){
+                if (min > values[i])
+                {
                     min = values[i];
+                }
             }
             
             return min;
