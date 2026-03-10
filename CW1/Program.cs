@@ -1,12 +1,58 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace App {
-    class Program {
-        static void Main(string[] args) {
-            for (int i = 0; i < 5; i ++) {
-                Console.WriteLine(i);
+namespace App
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Printing Numbers:");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i * i);
             }
-            Console.WriteLine("another");
+
+            Console.Write("Goodbye");
+        }
+
+        static int CalculateAverage(int[] values)
+        {
+            int average = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                average += values[i];
+            }
+
+            return average / values.Length;
+        }
+
+        static int CalculateMax(int[] values)
+        {
+            int max = values[0];
+            for (int i = 1; i < values.Length; i++)
+            {
+                if (values[i] > max)
+                {
+                    max = values[i];
+                }
+            }
+
+            return max;
+        }
+
+        static int CalculateMin(int[] values)
+        {
+            int min = values[0];
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (min > values[i])
+                {
+                    min = values[i];
+                }
+            }
+
+            return min;
         }
     }
 }
