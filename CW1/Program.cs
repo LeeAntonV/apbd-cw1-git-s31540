@@ -7,6 +7,7 @@ namespace App {
             for (int i = 0; i < 5; i ++) {
                 Console.WriteLine(i * i);
             }
+            Console.Write("Goodbye");
         }
     }
 }
